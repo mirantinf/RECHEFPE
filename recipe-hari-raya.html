@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <style>
+    body {
+      font-family: Arial;
+    }
+
+    /* Style the tab */
+    .tab {
+      overflow: hidden;
+      border: 1px solid #ccc;
+      /* background-color: #f5f5f5; */
+      background-color: orange;
+      color: white;
+    }
+
+    /* Style the buttons inside the tab */
+    .tab button {
+      background-color: inherit;
+      float: left;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      padding: 14px 16px;
+      transition: 0.3s;
+      font-size: 17px;
+    }
+
+    /* Change background color of buttons on hover */
+    .tab button:hover {
+      background-color: orange;
+    }
+
+    /* Create an active/current tablink class */
+    .tab button.active {
+      background-color: orange;
+    }
+
+    /* Style the tab content */
+    .tabcontent {
+      display: none;
+      padding: 6px 12px;
+      border: 1px solid #ccc;
+      border-top: none;
+    }
+
+    .column {
+      float: left;
+      width: 50%;
+      padding: 10px;
+    }
+
+    .center {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 50%;
+      text-align: center;
+    }
+
+    .text {
+      text-align: center;
+    }
+  </style>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+
+  <div class="header">
+    <div class="header-container">
+      <nav>
+
+        <ul>
+          <li class="items"><a href="index.html">Home</a></li>
+          <li class="items"><a href="about-us.html">About Us</a></li>
+          <li class="items"><a href="recipe-traditional.html">Traditional Recipe</a></li>
+          <li class="items"><a href="dessert.html">Dessert Recipe</a></li>
+          <li class="items"><a href="recipe-hari-raya.html">Eid al-Fitr Recipe</a></li>
+          <li class="btn"><a href="#"><i class="fas fa-bars"></i></a></li>
+        </ul>
+      </nav>
+
+      <script>
+        $(document).ready(function () {
+          $('.btn').click(function () {
+            $('.items').toggleClass("show");
+            $('ul li').toggleClass("hide");
+          });
+        });
+      </script>
+    </div>
+  </div>
+
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+  <h2 style="text-align: center;">Eid al-Fitr Recipe</h2>
+  </br>
+  </br>
+  <p style="text-align: center;"> After fasting for an entire month, Muslims around the world celebrate the end of
+    Ramadan with Eid al-Fitr. This joyous occasion is synonymous with family gatherings and visiting relatives to
+    strengthen the bonds of friendship and love. A time of great happiness and celebration, Eid al-Fitr is eagerly
+    anticipated by Muslims everywhere. One of the most enjoyable aspects of this holiday is indulging in the delicious
+    traditional Eid dishes that are often prepared in Indonesia and other parts of the world. From savory delicacies to
+    sweet treats, these dishes are a true delight for the senses and bring people together in a spirit of love and
+    togetherness. So whether you are enjoying the festivities with family or friends, be sure to savor every moment of
+    this special time and enjoy the rich cultural traditions that make Eid al-Fitr such a beloved holiday around the
+    world.</p>
+  <p></p>
+  </br>
+  <h3 style="text-align: center;"><b>Choose your favourite menu:</b></h3>
+  </br>
+  <div class="tab">
+    <button class="tablinks" onclick="openCity(event, 'Nastar')">NASTAR COOKIES</button>
+    <button class="tablinks" onclick="openCity(event, 'Ketupat')">KETUPAT</button>
+    <button class="tablinks" onclick="openCity(event, 'Opor Ayam')">OPOR AYAM</button>
+    <button class="tablinks" onclick="openCity(event, 'Rendang')">RENDANG</button>
+  </div>
+
+  <div id="Nastar" class="tabcontent">
+    <h2 style="text-align: center;">RECIPE COURTESY OF NASTAR COOKIES</h2>
+    </br>
+    <img src="img/nastar.jpeg" alt="Nastar" class="center" width="550" height="550">
+    </br>
+    <p style="text-align: center;" style="background-color: orange;"><i>You must be familiar with cheese nastar. Nastar
+        is a type of pastry made from
+        flour, butter, eggs, and pineapple jam as a filling. These cookies are named after Dutch, namely ananas and
+        tarts. The shape is very typical that is round with a diameter of about 2 cm which is decorated with a clove
+        stem at the top end. Today, cheese nastar doesn’t only contain pineapple jam. There are various variations such
+        as strawberry jam, pineapple, blueberries, and others. Not only on Eid al-Fitr, Nastar also exists during the
+        celebration of religious holidays until the Chinese New Year. Since the Eid day is approaching, here is a cheese
+        nastar recipe that you can try to make at home</i></p>
+    </br>
+    <h3>Ingredients:</h3>
+    </br>
+    <ul>
+      <li> <i class="fa fa-bars"></i>500 g pineapple without peels</li> </br>
+      <li> <i class="fa fa-bars"></i>3 g whole cloves *optional or adjust to taste</li> </br>
+      <li> <i class="fa fa-bars"></i>1 cinnamon stick *optional or adjust to taste</li> </br>
+      <li> <i class="fa fa-bars"></i>150 g granulated sugar</li> </br>
+      <li> <i class="fa fa-bars"></i>37 g unsalted butter</li> </br>
+      <li> <i class="fa fa-bars"></i>37 g margarine</li> </br>
+      <li> <i class="fa fa-bars"></i>30 g icing sugar</li> </br>
+      <li> <i class="fa fa-bars"></i>1 large egg yolk</li> </br>
+      <li> <i class="fa fa-bars"></i>15 g custard powder *can replace with cornstarch</li> </br>
+      <li> <i class="fa fa-bars"></i>120 g all-purpose flour</li> </br>
+      <li> <i class="fa fa-bars"></i>1 large egg yolk</li> </br>
+      <li> <i class="fa fa-bars"></i>15 ml (1 tbsp) vegetable oil</li> </br>
+      <li> <i class="fa fa-bars"></i>5 ml (1 tsp) sweetened condensed milk</li> </br>
+    </ul>
+    </br>
+    </br>
+    <h3>Directions</h3>
+    </br>
+    <p>Grate the pineapple or blend it with a food processor. Transfer the shredded pineapple and its juice along with
+      cinnamon stick and cloves into a heavy-bottom pan. Cook over medium heat and stir occasionally until the liquid is
+      gone.</p>
+    </br>
+    <hr>
+    </br>
+    <p>Add sugar and continue cooking until it has a thick jam consistency but with no liquid. Keep stirring towards the
+      end so it does not burn.</p>
+    </br>
+    <hr>
+    </br>
+    <p>Remove from the pan and cool it to room temperature. Cover and refrigerate for at least 30 minutes (up to a
+      week). It will become easier to handle and less sticky.</p>
+    </br>
+    <hr>
+    </br>
+    <p>Divide the pineapple jam evenly into 32 pieces (6g each). Roughly roll each into a ball. Refrigerate until
+      needed.</p>
+  </div>
+
+
+  <div id="Ketupat" class="tabcontent">
+    <h2 style="text-align: center;">RECIPE COURTESY OF KETUPAT</h2>
+    </br>
+    <img src="img/ketupat.jpeg" alt="Ketupat" class="center" width="300" height="300">
+    </br>
+    <p style="text-align: center;"><i>Rice cakes are popular sides made of rice that often accompany Indonesian savory
+        dishes, such as sate, gado-gado, ketoprak, lontong sayur, and many other dishes. For festive occasions, we
+        usually have ketupat or rice cakes wrapped in woven palm leave pouches in the shape of diamond. For daily meals,
+        lontong is more popular, which is rice cakes wrapped in banana leave pouches in the shape of a tube. Both are
+        quite tricky to make, though there are now lontong moulds that greatly increase the chance of success in lontong
+        making. As for ketupat, well, I won’t even bother trying, better leave them to the professionals and buy them
+        ready made</i></p>
+    </br>
+    <h3>Ingredients:</h3>
+    </br>
+    <ul>
+      <li>2 cups jasmine rice</li>
+      </br>
+      <li>1/4 teaspoon salt</li>
+      </br>
+      <li>4 cups water</li>
+      </br>
+    </ul>
+    </br>
+    <h3>Tools:</h3>
+    </br>
+    <ul>
+      <li>rice cooker</li>
+      </br>
+      <li>loaf pan</li>
+      </br>
+      <li>saran plastic wrap</li>
+      </br>
+    </ul>
+    </br>
+    <h3>Directions</h3>
+    </br>
+    <p>Wash and drain rice. Then place the rice, salt, and water in a rice cooker, and cook until rice cooker turns to
+      "warm".</p>
+    </br>
+    <hr>
+    </br>
+    <p>Open the lid, and with the rice paddle (this usually comes with your rice cooker) or a spatula, fluff and press
+      the rice. The cooked rice for making rice cake should be much wetter than typical steamed rice.</p>
+    </br>
+    <hr>
+    </br>
+    <p>Line a loaf pan with saran plastic wrap. Transfer the still warm rice to the pan, press with rice paddle or
+      spatula as you transfer the rice. Once all the rice has been transfer, cover the the top surface with another
+      piece of saran wrap and flatten the surface while keep pressing.</p>
+    </br>
+    <hr>
+    </br>
+    <p>Once the rice is as packed as it can be, poke the top saran plastic wrap with a skewer to create holes for steam
+      to escape.</p>
+    </br>
+    <hr>
+    </br>
+    <p>Let the rice cake cools, you can speed up the process by cooling it in the refrigerator.</p>
+    </br>
+    <hr>
+    </br>
+    <p>Once it has completely cooled, remove rice cake from the mould, remove the plastic wrap, and cut into 1 inch
+      cubes. Serve with your favorite savory dish.</p>
+    </br>
+  </div>
+
+  <div id="Opor Ayam" class="tabcontent">
+    <h2 style="text-align: center;">RECIPE COURTESY OF OPOR AYAM</h2>
+    </br>
+    <img src="img/opor-ayam.jpeg" alt="Opor Ayam" class="center" width="700" height="500">
+    </br>
+    <p style="text-align: center;"><i>Opor Ayam is an Indonesian chicken dish cooked in coconut milk with spices and
+        herbs. It tastes delicately rich with fragrant herbs.
+
+        Unlike many Indonesian dishes, this dish doesn’t use chillies or any hot spices. Therefore, it is often served
+        with Sambal on the side for those who love chillies and heat.</i></p>
+    </br>
+    <h3>Ingredients:</h3>
+    </br>
+    <ul>
+      <li> <i class="fa fa-bars"></i>¼cup coriander seeds</li>
+      <li> <i class="fa fa-bars"></i>3tablespoons coconut oil</li>
+      <li> <i class="fa fa-bars"></i>10small shallots, sliced</li>
+      <li> <i class="fa fa-bars"></i>Kosher salt, to tastes</li>
+      <li> <i class="fa fa-bars"></i>15garlic cloves</li>
+      <li> <i class="fa fa-bars"></i>5candlenuts (or 5 to 10 macadamia nuts)</li>
+      <li> <i class="fa fa-bars"></i>2 to 31-inch pieces kaempferia galanga root, peeled (optional)</li>
+      <li> <i class="fa fa-bars"></i>½tablespoon white peppercorns</li>
+      <li> <i class="fa fa-bars"></i>13-inch piece ginger, peeled and lightly smashed to loosen the fibers</li>
+      <li> <i class="fa fa-bars"></i>13-inch piece galangal, peeled and lightly smashed to loosen the fibers</li>
+      <li> <i class="fa fa-bars"></i>5lemongrass stalks, trimmed, smashed and tied into knots</li>
+      <li> <i class="fa fa-bars"></i>10 to 15fresh or dried salam leaves (Indonesian bay leaves)</li>
+      <li> <i class="fa fa-bars"></i>20fresh makrut lime leaves</li>
+      <li> <i class="fa fa-bars"></i>1tomato, chopped (or 1 cup cherry tomatoes)</li>
+      <li> <i class="fa fa-bars"></i>18.5-ounce can coconut milk</li>
+      <li> <i class="fa fa-bars"></i>¾cup chicken stock</li>
+      <li> <i class="fa fa-bars"></i>3pounds bone-in chicken pieces</li>
+    </ul>
+    </br>
+    <h3>Directions</h3>
+    </br>
+    <p>In a dry skillet over medium-high heat, toast the coriander seeds for 2 to 3 minutes. Let cool, then grind in a
+      spice grinder.</p>
+    </br>
+    <hr>
+    </br>
+    <p>In a large sauté pan, heat 2 tablespoons of the coconut oil over medium heat. Add the shallots and a generous
+      pinch of salt and cook, stirring often, until browned, about 10 minutes. Remove shallots to a food processor and
+      set aside. Add the garlic cloves and candlenuts to the same pan and cook, stirring constantly to prevent burning,
+      until deep golden brown, 2 to 3 minutes. Add the garlic and candlenuts to the shallots in the food processor along
+      with the kaempferia galanga root, white pepper and 2 tablespoons water; purée into a paste.</p>
+    </br>
+    <hr>
+    </br>
+    <p>Heat the remaining 1 tablespoon coconut oil in the sauté pan over medium heat and add the ginger, galangal,
+      lemongrass, salam leaves and lime leaves, scrunching the lime leaves in your hands as you drop them into the pot.
+      Allow to cook until the ingredients start to smell less intense and raw, stirring occasionally, 5 to 7 minutes.
+    </p>
+    </br>
+    <hr>
+    </br>
+    <p>Stir the ground coriander seeds, shallot paste mixture and tomato into the pan. Reduce the heat to low and slowly
+      stir in the coconut milk, a little at a time, to keep the sauce from breaking. When all the coconut milk is
+      incorporated and the mixture is gently simmering, add the chicken stock. Nestle the chicken into the pan and spoon
+      some of the sauce over the top. Cover and cook on low heat for about 40 minutes, or until the chicken is cooked
+      through and the dish is aromatic. You may have to adjust the heat to keep the mixture at a gentle simmer. (Do not
+      boil.) Season to taste with salt. Before serving, remove the galangal, ginger, lemongrass, salam and makrut
+      leaves. Serve with rice.</p>
+    </br>
+  </div>
+  </br>
+
+  <div id="Rendang" class="tabcontent">
+    <h2 style="text-align: center;">RECIPE COURTESY OF RENDANG</h2>
+    </br>
+    <img src="img/rendang.jpg" alt="Rendang" class="center" width="300" height="300">
+    </br>
+    <p style="text-align: center;"><i>Rendang is a rich dish of meat that has been slow cooked and braised in a coconut
+        milk seasoned with a herb and spice mixture over a period of several hours until the liquids evaporate and the
+        meat turns dark brown and tender, becoming caramelized and infused with rich flavors.</i></p>
+    </br>
+    <h3>Ingredients:</h3>
+    </br>
+    <ul>
+      <li>3 tbsp vegetable oil</li>
+      </br>
+      <li>2kg beef shin or skirt, cut into bite-sized cubes</li>
+      </br>
+      <li>2 lemongrass stalks, bashed (see 'Tip' for how to prepare)</li>
+      </br>
+      <li>2 x 400ml cans coconut milk</li>
+      </br>
+      <li>4 tbsp desiccated coconut</li>
+      </br>
+      <li>2 kaffir lime leaves, torn</li>
+      </br>
+      <li>1 ½ tbsp chicken stock powder (we used one from an Asian supermarket)</li>
+      </br>
+      <li>2 tbsp tamarind paste</li>
+      </br>
+      <li>1 tsp golden caster sugar</li>
+      </br>
+      <li>¼ tsp salt</li>
+      </br>
+    </ul>
+    </br>
+    <h3>Directions</h3>
+    </br>
+    <p>Wash and drain rice. Then place the rice, salt, and water in a rice cooker, and cook until rice cooker turns to
+      "warm".</p>
+    </br>
+    <hr>
+    </br>
+    <p>For the paste, soak the chillies in boiling water for 15 mins. Drain, remove seeds and whizz with the rest of the
+      paste ingredients in a small food processor until smooth.</p>
+    </br>
+    <hr>
+    </br>
+    <p>Firstly, you make the spice paste by grinding the onions, chilies, ginger, galangal, cumin, and coriander into a
+      paste using a pestle and mortar or a food processor/ blender. Then, place the beef chunks, the spice paste, and
+      the rest of the ingredients in a large cooking pan. Give it a good stir and start cooking at medium-high heat. You
+      can put the lid on to quicken the process.</p>
+    </br>
+    <hr>
+    </br>
+    <p>Continue cooking until the liquid (coconut milk and meat juice) reaches the boiling point. Then turn the heat
+      down and cook further at low heat with the lid on. So it’s kinda slow cooking.</p>
+    </br>
+    <hr>
+    </br>
+    <p>Take care and keep checking every now and again. Make sure you stir it every so often to prevent it from getting
+      burned at the bottom of the pan.</p>
+    <p>After about an hour, the curry gravy should get thickened and look shiny thanks to the coconut milk. And the meat
+      should be fully cooked and quite tender. At this point, you can stop cooking and enjoy it with a little bit of
+      gravy, if you like.</p>
+    </br>
+    <hr>
+    </br>
+    <p>If you want a proper dry-ish black rendang, keep cooking at low heat with the lid on until the gravy evaporates
+      and turns caramelized. Don’t forget to keep turning and stirring, especially when the liquid starts to dry up.
+    </p>
+    </br>
+  </div>
+
+
+
+  <!-- ini bagian footer-->
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+
+  <!-- ini bagian footer-->
+  <footer class="flex-list">
+    <div class="container">
+      <div class="footer-content">
+
+        <div class="footer-section layanan">
+          <h5>Want to be a contributor?</h5>
+          <p>If you want to contribute to our blog, you can hit us on our social media!</p>
+        </div>
+        <div class="footer-section social">
+          <h5>Sosial Media</h5>
+          <ul>
+            <li class="fb"><span class="fa fa-facebook"></span><a href="#">Facebook</a></li>
+            <li class="ig"><span class="fa fa-instagram"></span><a href="#">Instagram</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="Copyright">&copy;2023 Rechefpe | Group 2</div>
+  </footer>
+
+  <script>
+    function openCity(evt, cityName) {
+      var i, tabcontent, tablinks;
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("tablinks");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+      }
+      document.getElementById(cityName).style.display = "block";
+      evt.currentTarget.className += " active";
+    }
+  </script>
+
+</body>
+
+</html>

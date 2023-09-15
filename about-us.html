@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title> About Us </title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+
+<body>
+  <div class="header">
+    <div class="header-container">
+      <nav>
+
+        <ul>
+          <li class="items"><a href="index.html">Home</a></li>
+          <li class="items"><a href="about-us.html">About Us</a></li>
+          <li class="items"><a href="recipe-traditional.html">Traditional Recipe</a></li>
+          <li class="items"><a href="dessert.html">Dessert Recipe</a></li>
+          <li class="items"><a href="recipe-hari-raya.html">Eid al-Fitr Recipe</a></li>
+          <li class="btn"><a href="#"><i class="fas fa-bars"></i></a></li>
+        </ul>
+      </nav>
+
+      <script>
+        $(document).ready(function () {
+          $('.btn').click(function () {
+            $('.items').toggleClass("show");
+            $('ul li').toggleClass("hide");
+          });
+        });
+      </script>
+    </div>
+  </div>
+  <div class="text-about-us">
+    <img class="about-us-img" src="img/about-us.jpg">
+    <h2><span class="about-us-name">RECHEFPE</span> : A Recipe Website</h2>
+    <p>We are based in Indonesia, a project from Summer Club Explorer of Generation Girl. Established in 2023, we aim to
+      provide useful information for food lovers.</p>
+    <p>If you want to search for any recipe of your favorite foods, we are here to help.</p>
+    <p>You can also request a recipe! Here: </p>
+    <input type="text" placeholder="What recipe do you want?" />
+    <button onclick="myFunction()"><a href="#">Send Request</a></button>
+    <script>
+      function myFunction() {
+        alert("Yes, we hear you! Request is accepted!");
+      }
+    </script>
+
+  </div>
+  </div>
+  </div>
+
+  <!-- ini bagian footer-->
+  <footer class="flex-list">
+    <div class="container">
+      <div class="footer-content">
+
+        <div class="footer-section layanan">
+          <h5>Want to be a contributor?</h5>
+          <p>If you want to contribute to our blog, you can hit us on our social media!</p>
+
+        </div>
+        <div class="footer-section social">
+          <h5>Social Media</h5>
+          <ul>
+            <li class="fb"><span class="fa fa-facebook"></span><a href="#">Facebook</a></li>
+            <li class="ig"><span class="fa fa-instagram"></span><a href="#">Instagram</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="Copyright">&copy;2023 Rechefpe | Group 2</div>
+  </footer>
+</body>
+</section>
+</body>
+
+</html>

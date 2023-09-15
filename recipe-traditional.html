@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <style>
+    body {
+      font-family: Arial;
+    }
+
+    /* Style the tab */
+    .tab {
+      overflow: hidden;
+      border: 1px solid #ccc;
+      /* background-color: #f5f5f5; */
+      background-color: orange;
+      color: white;
+    }
+
+    /* Style the buttons inside the tab */
+    .tab button {
+      background-color: inherit;
+      float: left;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      padding: 14px 16px;
+      transition: 0.3s;
+      font-size: 17px;
+    }
+
+    /* Change background color of buttons on hover */
+    .tab button:hover {
+      background-color: orange;
+    }
+
+    /* Create an active/current tablink class */
+    .tab button.active {
+      background-color: orange;
+    }
+
+    /* Style the tab content */
+    .tabcontent {
+      display: none;
+      padding: 6px 12px;
+      border: 1px solid #ccc;
+      border-top: none;
+    }
+
+    .column {
+      float: left;
+      width: 50%;
+      padding: 10px;
+    }
+
+    .center {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 50%;
+      text-align: center;
+    }
+
+    .text {
+      text-align: center;
+    }
+  </style>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  </style>
+</head>
+
+<body>
+  <div class="header">
+    <div class="header-container">
+      <nav>
+
+        <ul>
+          <li class="items"><a href="index.html">Home</a></li>
+          <li class="items"><a href="about-us.html">About Us</a></li>
+          <li class="items"><a href="recipe-traditional.html">Traditional Recipe</a></li>
+          <li class="items"><a href="dessert.html">Dessert Recipe</a></li>
+          <li class="items"><a href="recipe-hari-raya.html">Eid al-Fitr Recipe</a></li>
+          <li class="btn"><a href="#"><i class="fas fa-bars"></i></a></li>
+        </ul>
+      </nav>
+
+      <script>
+        $(document).ready(function () {
+          $('.btn').click(function () {
+            $('.items').toggleClass("show");
+            $('ul li').toggleClass("hide");
+          });
+        });
+      </script>
+    </div>
+  </div>
+  <h2>Traditional Food</h2>
+  <p>Click on the buttons inside the tab menu:</p>
+
+  <div class="opacity">
+    <img
+      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxn_2KgIksgOZTmW3zYXSHdP_Fq4TJjo4D_N-8yBIf0Vy4SKYMTubX2J5fM3RtBTZCdjc&usqp=CAU"
+      alt="traditional food" width="100%">
+  </div>
+
+
+  <div class="tab">
+    <button class="tablinks" onclick="openFood(event, 'Rawon')">Rawon</button>
+    <button class="tablinks" onclick="openFood(event, 'Gudeg')">Gudeg</button>
+    <button class="tablinks" onclick="openFood(event, 'Lumpia Semarang')">Lumpia Semarang</button>
+  </div>
+
+  <div id="Rawon" class="tabcontent">
+    <h3>Rawon</h3>
+    <p>Rawon is an Indonesian dish originating from Ponorogo in the form of a black meat soup with a mixture of spices
+      Typical of using kluwek, this food is more than 1,000 years old.</p>
+    <img src="https://www.masakapahariini.com/wp-content/uploads/2018/04/resep-rawon-daging-780x440.jpg"
+      alt="Fried Chicken" width=70% class="center">
+
+    <h2> Ingredients:</h2>
+    <ul>
+      <li> 500 grams of brisket meat</li>
+      <li> 2 lemongrass stalks, bruised</li>
+      <li> 5 lime leaves</li>
+      <li> 1 galangal segment, bruised</li>
+      <li> Enough water</li>
+      <li> 6 red onions</li>
+      <li> 3 cloves of garlic</li>
+      <li> 7 kluwek fruit, scoop out the contents</li>
+      <li> 1 tsp coriander</li>
+      <li> 13 candlenuts, roasted</li>
+      <li> 1 turmeric segment, roasted</li>
+      <li> Salt to taste</li>
+      <li> Sugar to taste</li>
+      <li> Sufficient powdered stock</li>
+      <li> Sprouts</li>
+      <li> Salted egg</li>
+      <li> Chili shrimp paste</li>
+    </ul>
+
+    <section>
+      <h2> How to Make: </h2>
+      <p> Saute ground spices, galangal, lemongrass and lime leaves until fragrant and cooked.</p>
+      <hr>
+      <p> Then add the meat, stir well and add water.</p>
+      <hr>
+      <p> Season with salt, sugar and stock powder. Stir, cook until cooked and the meat is tender.</p>
+      <hr>
+      <p> Taste test and turn off the stove. Serve rawon warm with a sprinkling of sprouts, salted egg and chili sauce.
+        <hr>
+      </p>
+      <p>serve.</p>
+      <section>
+
+
+  </div>
+
+  <div id="Gudeg" class="tabcontent">
+    <h3>Gudeg</h3>
+    <p>Gudeg is a typical dish of the Special Region of Yogyakarta Province which is made from young jackfruit cooked in coconut milk. It takes hours to make this dish. The brown color is usually produced by teak leaves
+      cooked at the same time.</p>
+    <img src="https://awsimages.detik.net.id/community/media/visual/2022/01/03/gudeg-1_43.jpeg?w=1200" width="240"
+      class="center">
+    <h2> Ingredients:</h2>
+    <ul>
+      <li> 1 kg young jackfruit, cut into cubes then boil briefly with a little salt, remove from heat, drain</li>
+      <li> 400 grams of brown sugar, comb</li>
+      <li> 4 galangal segments, crushed </li>
+      <li> 4 stalks of lemongrass, crushed</li>
+      <li> 4 galangal segments, crushed</li>
+      <li> 5 bay leaves</li>
+      <li> 4 lime leaves</li>
+      <li> 1 liter of liquid coconut milk</li>
+      <li> 700ml coconut water</li>
+      <li> 1 liter of thick coconut milk</li>
+      <li> Salt to taste</li>
+      <li> 3 teak leaves</li>
+      <li> Boiled eggs</li>
+      <li> 100 gram bawang merah</li>
+      <li> 10 siung bawang putih </li>
+      <li> 8 butir kemiri sangrai</li>
+      <li> 20 gram ketumbar bubuk</li>
+    </ul>
+
+    <section>
+      <h2> How to Make: </h2>
+      <p> Arrange the teak leaves on the bottom of the pan, then add the young jackfruit and all the spices. Pour in
+        liquid coconut milk and coconut water. Then cover again with teak leaves and cover the pan, cook until the sauce
+        reduces slightly.</p>
+      <hr>
+      <p> After the sauce has reduced slightly, add brown sugar, salt and thick coconut milk. Cover again with teak
+        leaves and cover the pan, continue cooking over low heat.</p>
+      <hr>
+      <p> Taste correction. Finally add the boiled eggs, then cover the pan again, continue cooking the gudeg until
+        cooked and completely dry for 8-10 hours.</p>
+      <hr>
+      <p> Serve.</p>
+      <hr>
+      <section>
+
+
+  </div>
+
+  <div id="Lumpia Semarang" class="tabcontent">
+    <h3>Lumpia Semarang</h3>
+    <p>Semarang spring rolls are a kind of rollade containing bamboo shoots, eggs and chicken or shrimp. The taste of Semarang lumpia is a combination of Chinese and Indonesian flavors because it was first made by a person of Chinese descent who married an Indonesian and lived in Semarang, Central Java.</p>
+    <img src=http://profile.perpus.jatengprov.go.id/asset/foto_berita/resep-lumpia-semarang.jpg width="250"
+      class=center>
+     <h2> Ingredients:</h2>
+    <ul>
+      <li> 1.2 kg bamboo shoots, cut into matchstick-sized pieces, boiled, drained</li>
+      <li> 200 grams of minced chicken meat</li>
+      <li> 30 pieces of instant spring roll skin </li>
+      <li> 20 red onions, chopped</li>
+      <li> 15 cloves of garlic, chopped</li>
+      <li> 5 tablespoons sweet soy sauce</li>
+      <li> 3 tablespoons sesame oil</li>
+      <li> 3 tablespoons soy sauce</li>
+      <li> 3 tsp ground pepper</li>
+      <li> 3 tsp granulated sugar</li>
+      <li> Salt to taste</li>
+      <li> Egg white for greasing spring roll skin</li>
+    </ul>
+
+    <section>
+      <h2> How to Make: </h2>
+      <p>Saute the garlic and shallots until fragrant.</p>
+      <hr>
+      <p> Add the chopped chicken, cook until the chicken meat turns whiter.</p>
+      <hr>
+      <p> Add boiled bamboo shoots. Add sweet soy sauce, light soy sauce, sesame oil, ground pepper, granulated sugar and salt</p>
+      <hr>
+      <p> Cook until the water reduces. Let cool.</p>
+      <hr>
+      <p>Take one sheet of spring roll skin. Place one tablespoon of spring roll filling at the end. Fold like an envelope. Finally roll it up, and brush the ends of the skin with egg white so that the folds don't come apart when frying. Make sure the folds are tight, compact and rolled.</p>
+      <hr>
+      <p>Fry until brown or steam.</p>
+      <hr>
+      <p>Serve.</p>
+      <section>
+
+
+  </div>
+
+  <script>
+    function openFood(evt, foodName) {
+      var i, tabcontent, tablinks;
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("tablinks");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+      }
+      document.getElementById(foodName).style.display = "block";
+      evt.currentTarget.className += " active";
+    }
+  </script>
+
+</body>
+</p>
+</div>

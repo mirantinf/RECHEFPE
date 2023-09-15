@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <meta charset="utf-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+  <title>Recipe</title>
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+
+<body>
+
+  <div class="welcome-page">
+    <div class="header">
+      <div class="header-container">
+        <nav>
+
+          <ul>
+            <li class="items"><a href="index.html">Home</a></li>
+            <li class="items"><a href="about-us.html">About Us</a></li>
+            <li class="items"><a href="recipe-traditional.html">Traditional Recipe</a></li>
+            <li class="items"><a href="dessert.html">Dessert Recipe</a></li>
+            <li class="items"><a href="recipe-hari-raya.html">Eid al-Fitr Recipe</a></li>
+            <li class="btn"><a href="#"><i class="fas fa-bars"></i></a></li>
+          </ul>
+        </nav>
+
+        <script>
+          $(document).ready(function () {
+            $('.btn').click(function () {
+              $('.items').toggleClass("show");
+              $('ul li').toggleClass("hide");
+            });
+          });
+        </script>
+      </div>
+    </div>
+    <div class="landing-page">
+      <div class="landing-page-container">
+        <h1>CHOOSE BEST FOOD</h1>
+        <p>“Get happiness from good food.”</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- About US-->
+  <section id="contact-section">
+    <div class="container">
+      <div>
+        <h2>About Us</h2>
+        <br>
+        <p>Looking for food recipes? You visit the right place!</p>
+        <p>Cook your best food with our recipes, chefs!</p>
+        <button><a href="about-us.html">Know More to Request!</a></button>
+      </div>
+    </div>
+  </section>
+  <div class="main-article">
+    <div class="main-article-container">
+      <div class="main-article-left">
+        <h2>Our #1 Top Recipe</h2>
+        <p>
+          Rendang is an Indonesian culinary masterpiece renowned for its rich flavors. This slow-cooked beef dish combines tender meat with a harmonious blend of spices and coconut milk, resulting in a savory, slightly sweet, and slightly spicy sensation. Its complexity and depth make it a beloved and iconic dish in Indonesian cuisine.
+        </p>
+      </div>
+      <div class="main-article-right">
+        <img id="dish-img" src="img/rendang.png" alt="">
+      </div>
+    </div>
+  </div>
+  <!-- INI END BAGIAN HEADER, MAIN, -->
+
+  <!-- Menu -->
+  <!-- Menu -->
+  <div class="menu-rs" id="Menu">
+    <div class="menu-nav-wrapper">
+      <div class="menu-nav-container">
+        <ul>
+          <li><a href="recipe-traditional.html">Traditional Recipe</a></li>
+          <li><a href="dessert.html">Dessert Recipe</a></li>
+          <li><a href="recipe-hari-raya.html">Eid al-Fitr Recipe</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="menu-item-wrapper">
+      <div class="menu-item-container">
+        <div class="menu-item-heading">
+          <h2>Choose your favorite menu</h2>
+        </div>
+        <div class="item">
+          <img src="img/serabi.jpeg" width="600" height="400" id="gambar-padang">
+          <div class="desc">
+            <h4>Serabi</h4>
+            <p>Serabi is a delightful Indonesian pancake known for its small, fluffy, and slightly sweet texture. These bite-sized pancakes are traditionally made with coconut milk and rice flour, giving them a distinctively rich and coconutty flavor.</p>
+          </div>
+        </div>
+        <div class="item">
+          <img src="img/lemper.jpg" width="600" height="400" id="gambar-padang">
+          <div class="desc">
+            <h4>Lemper</h4>
+            <p>Lemper is a popular Indonesian snack that features sticky rice cooked with coconut milk, wrapped in a banana leaf. Inside, you'll find a tasty filling, often made with seasoned shredded chicken. </p>
+          </div>
+        </div>
+        <div class="item">
+          <img src="img/kue-nastar.jpg" width="600" height="400" id="gambar-padang">
+          <div class="desc">
+            <h4>Nastar</h4>
+            <p> Nastar refers to delicious Indonesian pineapple tarts that are small, buttery, and melt-in-your-mouth. These bite-sized treats are typically filled with sweet pineapple jam and often enjoyed during festive occasions and celebrations. </p>
+          </div>
+        </div>
+        <div class="item">
+          <img src="img/ayam.jpg" width="600" height="400" id="gambar-padang">
+          <div class="desc">
+            <h4>Opor Ayam</h4>
+            <p>Opor Ayam is a beloved Indonesian chicken dish known for its creamy coconut milk sauce infused with aromatic spices. Often enjoyed with steamed rice on special occasions, it's a cherished Indonesian comfort food.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <!-- Menu -->
+  <!-- ini bagian footer-->
+  <footer class="flex-list">
+    <div class="container">
+      <div class="footer-content">
+
+        <div class="footer-section layanan">
+          <h5>Want to be a contributor?</h5>
+          <p>If you want to contribute to our blog, you can hit us on our social media!</p>
+        </div>
+        <div class="footer-section social">
+          <h5>Sosial Media</h5>
+          <ul>
+            <li class="fb"><span class="fa fa-facebook"></span><a href="#">Facebook</a></li>
+            <li class="ig"><span class="fa fa-instagram"></span><a href="#">Instagram</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="Copyright">&copy;2023 Rechefpe | Group 2</div>
+  </footer>
+</body>
+
+</html>

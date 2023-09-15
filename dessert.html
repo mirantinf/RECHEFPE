@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      font-family: Arial;
+    }
+
+    /* Style the tab */
+    .tab {
+      overflow: hidden;
+      border: 1px solid #ccc;
+      /* background-color: #f5f5f5; */
+      background-color: orange;
+      color: white;
+    }
+
+    /* Style the buttons inside the tab */
+    .tab button {
+      background-color: inherit;
+      float: left;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      padding: 14px 16px;
+      transition: 0.3s;
+      font-size: 17px;
+    }
+
+    /* Change background color of buttons on hover */
+    .tab button:hover {
+      background-color: orange;
+    }
+
+    /* Create an active/current tablink class */
+    .tab button.active {
+      background-color: orange;
+    }
+
+    /* Style the tab content */
+    .tabcontent {
+      display: none;
+      padding: 6px 12px;
+      border: 1px solid #ccc;
+      border-top: none;
+    }
+
+    .column {
+      float: left;
+      width: 50%;
+      padding: 10px;
+    }
+
+    .center {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 50%;
+      text-align: center;
+    }
+
+    .text {
+      text-align: center;
+    }
+  </style>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  </style>
+</head>
+
+<body>
+  <div class="header">
+    <div class="header-container">
+      <nav>
+        <ul>
+          <li class="items"><a href="index.html">Home</a></li>
+          <li class="items"><a href="about-us.html">About Us</a></li>
+          <li class="items"><a href="recipe-traditional.html">Traditional Recipe</a></li>
+          <li class="items"><a href="dessert.html">Dessert Recipe</a></li>
+          <li class="items"><a href="recipe-hari-raya.html">Eid al-Fitr Recipe</a></li>
+          <li class="btn"><a href="#"><i class="fas fa-bars"></i></a></li>
+        </ul>
+      </nav>
+
+      <script>
+        $(document).ready(function () {
+          $('.btn').click(function () {
+            $('.items').toggleClass("show");
+            $('ul li').toggleClass("hide");
+          });
+        });
+      </script>
+    </div>
+  </div>
+  <h2>Traditional Food</h2>
+  <p>Click on the buttons inside the tab menu:</p>
+
+  <div class="opacity">
+    <img
+      src="https://i.pinimg.com/564x/91/bc/d7/91bcd704ed1619f61a2d2b305a899363.jpg"
+      alt="dessert" width="100%">
+  </div>
+
+
+  <div class="tab">
+    <button class="tablinks" onclick="openFood(event, 'Klepon')">Klepon</button>
+    <button class="tablinks" onclick="openFood(event, 'Es Campur')">Es Campur</button>
+    <button class="tablinks" onclick="openFood(event, 'Dadar Gulung')">Dadar Gulung</button>
+  </div>
+
+  <div id="Klepon" class="tabcontent">
+    <h3>Klepon</h3>
+    <p>Klepon is a delightful and iconic Indonesian sweet snack. These small, green, and glutinous rice cakes are filled with palm sugar, creating a burst of sweetness with each bite. The exterior is coated with grated coconut, which adds a pleasant texture to the treat. What makes klepon even more special is its subtle pandan leaf aroma, which not only contributes to its green color but also enhances its flavor. This beloved dessert is a popular choice for traditional celebrations and afternoon snacks in Indonesia.</p>
+    <img src="https://i.pinimg.com/564x/43/75/b7/4375b7719c1face5bfbbb4a673fa8a68.jpg"
+      alt="Klepon" width=70% class="center">
+
+    <h2> Ingredients:</h2>
+    <ul>
+        <li>200 grams of glutinous rice flour</li>
+        <li>100 grams of palm sugar (gula merah)</li>
+        <li>100 ml of water</li>
+        <li>100 grams of grated coconut</li>
+        <li>A pinch of salt</li>
+        <li>Pandan leaves (for natural green coloring)</li>
+    </ul>
+
+    <section>
+      <h2>Instructions:</h2>
+      <ol type="1">
+          <li>Dissolve palm sugar in water and bring it to a boil to create sugar syrup. Set aside to cool.</li>
+          <li>Mix glutinous rice flour with a pinch of salt and enough water to form a smooth dough.</li>
+          <li>Divide the dough into small portions and flatten each portion to form a small pancake.</li>
+          <li>Place a small amount of palm sugar in the center of each dough piece and seal it to form a ball.</li>
+          <li>Boil the stuffed dough balls until they float to the surface (indicating they are cooked).</li>
+          <li>Remove the klepon from boiling water and roll them in grated coconut to coat.</li>
+          <li>Enjoy your delicious klepon!</li>
+      </ol>
+      <section>
+
+
+  </div>
+
+  <div id="Es Campur" class="tabcontent">
+    <h3>Es Campur</h3>
+    <p>Es Campur is a refreshing Indonesian dessert known for its delightful blend of flavors and textures. This colorful treat features a medley of ingredients, including coconut jelly (nata de coco), palm fruit (kolang-kaling), shaved ice, and a generous drizzle of sweetened condensed milk. The dessert is often sweetened with red sugar syrup (gula merah) and garnished with diced grass jelly (cincau) and mixed fruits. The combination of creamy, icy, and chewy elements makes Es Campur a popular choice for cooling off on hot Indonesian days.</p>
+    <img src="https://i.pinimg.com/564x/d2/91/a2/d291a2b8687101fcfacaeb51750e92d7.jpg" width="240"
+      class="center">
+    <h2> Ingredients:</h2>
+    <ul>
+        <li>150 grams of coconut jelly (nata de coco)</li>
+        <li>100 grams of red sugar syrup (gula merah)</li>
+        <li>100 grams of shaved ice</li>
+        <li>100 ml of sweetened condensed milk</li>
+        <li>1 tablespoon of grass jelly (cincau), diced</li>
+        <li>1 tablespoon of palm fruit (kolang-kaling)</li>
+        <li>1 tablespoon of sweetened coconut milk</li>
+        <li>2 tablespoons of mixed fruits (e.g., jackfruit, lychee)</li>
+    </ul>
+
+    <section>
+      <h2>Instructions:</h2>
+      <ol type="1">
+          <li>Place coconut jelly, palm fruit, and mixed fruits in a bowl.</li>
+          <li>Pour red sugar syrup and sweetened coconut milk over the fruits.</li>
+          <li>Add shaved ice to the bowl.</li>
+          <li>Drizzle sweetened condensed milk on top.</li>
+          <li>Garnish with diced grass jelly.</li>
+          <li>Stir and enjoy your refreshing Es Campur!</li>
+      </ol>
+      <section>
+
+
+  </div>
+
+  <div id="Dadar Gulung" class="tabcontent">
+    <h3>Dadar Gulung</h3>
+    <p>Dadar Gulung is a beloved Indonesian dessert that combines the flavors of coconut and palm sugar in a delicate, rolled pancake. The pancake itself is made from a batter of rice flour and mung bean flour, creating a soft and slightly chewy texture. It gets its distinctive green hue from pandan leaves. Once cooked, the pancakes are filled with a mixture of grated coconut and grated palm sugar. The result is a sweet, aromatic, and visually appealing dessert that showcases the rich culinary traditions of Indonesia.Dadar Gulung is often enjoyed as a treat during special occasions and gatherings.</p>
+    <img src="https://i.pinimg.com/564x/16/72/26/16722600e4bea196a35a696563c54ae2.jpg" width="250"
+      class=center>
+      <h2>Ingredients:</h2>
+      <ul>
+          <li>100 grams of rice flour</li>
+          <li>50 grams of mung bean flour (tepung hunkwe)</li>
+          <li>200 ml of coconut milk</li>
+          <li>100 grams of palm sugar (gula merah), grated</li>
+          <li>A pinch of salt</li>
+          <li>Pandan leaves (for natural green coloring)</li>
+          <li>Grated coconut for filling</li>
+      </ul>
+  
+      <section>
+      <h2>Instructions:</h2>
+      <ol type="1">
+          <li>Mix rice flour, mung bean flour, salt, and coconut milk to create a smooth batter.</li>
+          <li>Add pandan juice for green color (extract from pandan leaves).</li>
+          <li>Heat a non-stick pan and pour a ladle of batter to form a thin pancake.</li>
+          <li>Cook until the pancake is set and can be easily lifted from the pan.</li>
+          <li>Repeat to make more pancakes.</li>
+          <li>Place grated coconut and palm sugar in the center of each pancake, then roll it up.</li>
+          <li>Your Dadar Gulung is ready to serve!</li>
+      </ol>
+      </section>
+
+  </div>
+
+<footer class="flex-list">
+    <div class="container">
+      <div class="footer-content">
+
+        <div class="footer-section layanan">
+          <h5>Want to be a contributor?</h5>
+          <p>If you want to contribute to our blog, you can hit us on our social media!</p>
+        </div>
+        <div class="footer-section social">
+          <h5>Sosial Media</h5>
+          <ul>
+            <li class="fb"><span class="fa fa-facebook"></span><a href="#">Facebook</a></li>
+            <li class="ig"><span class="fa fa-instagram"></span><a href="#">Instagram</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="Copyright">&copy;2023 Rechefpe | Group 2</div>
+  </footer>
+        
+  <script>
+    function openFood(evt, Klepon) {
+      var i, tabcontent, tablinks;
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("tablinks");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+      }
+      document.getElementById(Klepon).style.display = "block";
+      evt.currentTarget.className += " active";
+    }
+  </script>
